@@ -88,14 +88,40 @@ padding:2% 0px 2% 0px;}
 }
 .box-green { 
     background: #5ea919; 
-    margin: 0 0 22px 0; 
-    padding: 20px 25px 20px 25px; 
-    position:relative;
-
+    padding: 2%; 
 }
 .box-green p{
     text-align:justify;
     line-height:200%;
     color:white;
-    font-size:18px;
+    font-size:14px;
+}
+.carousel-inner .item img {
+    width:100%;
+    height:100%;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+}
+.carousel-control {
+    background:#5ea950;
+    color:#999;
+    padding: 4px 0;
+    width:26px;
+    top:auto;
+    left:auto;
+    bottom:0;
+    opacity:1;
+    text-shadow:none;
+}
+.carousel-control.right {
+    right:10px;
+}
+
+.carousel-control.left {
+    right: 40px;
+}
+ .box-green blockquote {
+    padding: 10px 20px;
+    border-left:none;
 }
