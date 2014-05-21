@@ -35,13 +35,18 @@
     <div class="col-md-8">
       <%= image_tag("keyfine2.png", onmouseover: "this.src='#{asset_path('keyfine1.png')}'", :class => "thnkman", onmouseout: "this.src='#{asset_path('keyfine2.png')}'")%>
     </div>
-    <div class="col-md-4">
-      text area
+    <div class="col-md-4 box-green">
+      <p>we design and develop autonomic open source ICT solutions across the social sector to bridge the gap between digital haves and have nots in under connected information republics</p>
+
+
+
     </div>
   </div>
 </div>
 
   <%= yield %>
-<%= render 'layouts/homefooter/footer' %>
+  <%= render 'layouts/homefooter/footer' %>
+
+
 </body>
 </html>

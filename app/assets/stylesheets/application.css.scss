@@ -72,7 +72,7 @@ body{
 .darkbg{
     background: #2c3e50;
     border-top:1px solid #2c3e50;
-    padding:2% 0px 2% 0px;}
+padding:2% 0px 2% 0px;}
 
 .boxtopshadow{
     box-shadow:inset 0px 4px 9px rgba(0,0,0,.6);    
@@ -81,8 +81,21 @@ body{
     color:white !important;
 }
 .paddfooter{
-padding:2%;
+    padding:2%;
 }
 .thnkman{
     width:100%;
+}
+.box-green { 
+    background: #5ea919; 
+    margin: 0 0 22px 0; 
+    padding: 20px 25px 20px 25px; 
+    position:relative;
+
+}
+.box-green p{
+    text-align:justify;
+    line-height:200%;
+    color:white;
+    font-size:18px;
 }
