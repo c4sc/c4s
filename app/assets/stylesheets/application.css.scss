@@ -2,6 +2,9 @@
 .navcolor{
     background-color: #34495e;
 }
+.navbar{
+    border-radius: 0px;
+}
 .navbar-inverse {
     border: none;
 }
@@ -55,4 +58,24 @@
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
     border-top: 0;
+}
+.grncolor{
+    background-color: #2ecc71;
+}
+.bluebg{
+    background: #34495e;
+}
+.darkbg{
+    background: #2c3e50;
+    border-top:1px solid #2c3e50;
+    padding:2% 0px 2% 0px;}
+
+.boxtopshadow{
+    box-shadow:inset 0px 4px 9px rgba(0,0,0,.6);    
+}
+.bluegb li{
+    color:white !important;
+}
+.paddfooter{
+padding:2%;
 }
