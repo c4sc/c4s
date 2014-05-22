@@ -30,8 +30,36 @@
     </div><!--/.nav-collapse -->
   </div>
 </div>
-<%= yield %>
+
+
+<div class="row box-green txtpadd" style="margin-top:-20px;">
+  <div class="container">
+  <div class="col-md-6">
+    <h1> work</h1>
+    <p>our work </p>
+  </div>
+  <div class="col-md-6">
+    <ul class="breadcrumb pull-right">
+      <li class="active">work</li>
+    </ul>
+  </div>
+  </div>
+</div>
+  <div class="row" style="margin-top:3%">
+    <div class="col-xs-3">
+      <ul type="none">
+        <li><a href="#"> <%= image_tag("w1.gif", class:'logowidth') %></a></li>
+        <li><a href="/works/arividam"> <%= image_tag("w2.gif", class:'logowidth') %></a></li>
+        <li><a href="/works/lms"> <%= image_tag("w3.gif", class:'logowidth') %></a></li>
+        <li><a href="/works/peecs"> <%= image_tag("w4.gif", class:'logowidth') %></a></li>
+      </ul>
+    </div>
+    <div class="col-xs-9">
+      <%= yield %>
+    </div>
+  </div>
 <%= render 'layouts/homefooter/footer' %>
+
 
 </body>
 </html>

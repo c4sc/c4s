@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
+  resources :expertises
+
   root 'home#index'
   get '/aboutus' => 'home#about'
   get '/Expertise' => 'home#expertise'
   get '/works' => 'home#work'
+  get '/works/arividam' => 'home#arividam'
+  get '/works/lms' => 'home#lms'
+  get '/works/peecs' => 'home#peecs'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
