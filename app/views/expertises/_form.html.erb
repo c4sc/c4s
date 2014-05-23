@@ -13,19 +13,19 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email , class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :subject %><br>
-    <%= f.text_area :subject , cols:50 , rows:1 %>
+    <%= f.text_area :subject , class: 'form-control' , rows:1 %>
   </div>
   <div class="field">
     <%= f.label :question %><br>
-    <%= f.text_area :question , cols:50 , rows:10 %>
+    <%= f.text_area :question , class: 'form-control', rows:10 %>
   </div>
   <div class="actions">
     <%= f.submit %>

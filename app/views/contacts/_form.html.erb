@@ -13,23 +13,23 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name , class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email , class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :mobile %><br>
-    <%= f.text_field :mobile %>
+    <%= f.text_field :mobile , class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :subject %><br>
-    <%= f.text_area :subject %>
+    <%= f.text_area :subject , class: 'form-control', rows: '1' %>
   </div>
   <div class="field">
     <%= f.label :Message %><br>
-    <%= f.text_area :Message %>
+    <%= f.text_area :Message , class: 'form-control',rows: '7' %>
   </div>
   <div class="actions">
     <%= f.submit %>
