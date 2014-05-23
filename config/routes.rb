@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :expertises
+  resources :contacts
 
   root 'home#index'
   get '/aboutus' => 'home#about'
