@@ -13,6 +13,7 @@
 </div>
 <div class="col-md-12">
   <div class="container" style="padding:5%">
+
     <div class="col-md-2">
     </div>
     <div class="col-md-8">
@@ -20,10 +21,17 @@
     </div>
     <div class="col-md-2">
     </div>
+  </div>
     <div class="container">
       <div class="col-md-3">
       </div>
       <div class="col-md-6">
+        <% if notice %>
+              <div data-alert class="alert alert-success">
+              <a href="#" class="close">&times;</a>
+              <%= content_tag :div, notice %>
+            </div>
+          <% end %>
         <%= render "expertises/form" %>
       </div>
       <div class="col-md-3">
