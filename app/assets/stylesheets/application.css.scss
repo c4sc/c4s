@@ -137,3 +137,18 @@ blockquote{
 .logowidth{
     width:100%;
 }
+.darkactive{
+    background:#34495e;
+}
+.darkactive a{ color:white;}
+.left_border{
+    border-left:1px solid #34495e;
+}
+.leftmenu{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.leftmenu ul li a:hover{
+    color:black; 
+    font-weight:bold;
+}
