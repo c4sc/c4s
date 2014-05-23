@@ -18,4 +18,7 @@ class HomeController < ApplicationController
   def lms
     render :layout => "layouts/leftmenulayout"
   end
+  def contact
+    @contact = Contact.new
+  end
 end
