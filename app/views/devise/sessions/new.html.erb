@@ -1,17 +1,54 @@
-<h2>Sign in</h2>
+<style>
+.page-header {
+    border-bottom: 1px solid #FFFFFF;
+    margin: 20px 0;
+    padding-bottom: 9px;
+    text-align: center;
+}
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
+.form-control {
+    border: 1px solid #D6D6D6;
+    border-radius: 0;
+    box-shadow: none;
+    height: 50px;
+    padding: 6px 15px;
+}
 
-  <div><%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
+body {
+    background-color: #ffffff;
+}
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
+.row {
+    background: #ededed;
+    padding: 20px 50px 20px 50px;
+    margin: 100px;
+}
 
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
+.btn {
+    padding: 10px;
+    border-radius: 0;
+    border: none;
+    font-size: 21px;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="page-header"> <h2>Sign in</h2></div>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div><%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, class:"form-control input-md" %></div>
 
-<%= render "devise/shared/links" %>
+        <div><%= f.label :password %><br />
+            <%= f.password_field :password, autocomplete: "off", class:"form-control      input-md" %></div>
+
+        <% if devise_mapping.rememberable? -%>
+            <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+    <% end -%>
+
+    <div style="margin:3%"><%= f.submit "Sign in", class:"btn btn-block btn-success" %></div>
+    
+    <%= render "devise/shared/links" %>
+    <% end %>
+    </div>
+</div>
+</div>
