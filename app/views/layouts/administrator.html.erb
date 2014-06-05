@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>C4s</title>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-static navcolor" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Centre 4 Social computing </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+          <li class="<%= 'active' if current_page?('/') %>"><a href="/">c4s</a></li>
+        <li class="<%= 'active' if current_page?('/admin/index') %>"><a href="/admin/index">home</a></li>
+        <li class="<%= 'active' if current_page?('/admin/expertise/view') %>"><a href="/admin/expertise/view">expertise</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+<div class="container">
+    <div class="span3">
+        <center>
+            <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
+            <h3>Abhilash chamban</h3>
+            <em>C4S,Wayanad</em>
+        </center>
+    </div>
+</div>
+
+<%= yield %>
+<%= render 'layouts/homefooter/footer' %>
+
+</body>
+</html>

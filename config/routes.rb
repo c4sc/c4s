@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   devise_for :users
   resources :expertises
   resources :contacts
@@ -12,6 +13,9 @@ Rails.application.routes.draw do
   get '/works/peecs' => 'home#peecs'
   get '/c4s/contact' => 'home#contact'
   get '/c4s/services' => 'home#services'
+  
+  get '/admin/expertise/5624_view' => 'administrator#index'
+  get '/admin/contacts/245226_index' => 'administrator#admin_expertise_list'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
