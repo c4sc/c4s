@@ -9,6 +9,6 @@ class AdministratorController < ApplicationController
     end
     def admin_expertise_list
         
-        @expertise_data = Expertise.all
+        @expert_list = Expertise.all
     end
 end
