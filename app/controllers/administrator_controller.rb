@@ -7,4 +7,8 @@ class AdministratorController < ApplicationController
 
         render :layout => "layouts/administrator"
     end
+    def admin_expertise_list
+        
+        @expertise_data = Expertise.all
+    end
 end
