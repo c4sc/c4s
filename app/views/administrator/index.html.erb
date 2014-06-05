@@ -13,8 +13,7 @@
 }
 .info-block.block-info:hover
 {
-    border-color:#20819e;
-    background:#20819e;
+    border:1px solid #20819e;
 }
 .info-block.block-info .square-box
 {
@@ -29,7 +28,12 @@
     float:right;
     border-radius: 15px;
 }
-
+.txtstyle{
+    color:black;
+}
+.txtmsg{
+    color:blue;
+}
 </style>
 <script>
 $(function() {    
@@ -49,32 +53,25 @@ $(function() {
             <input type="search" class="form-control" id="input-search" placeholder="Search contacts..." >
         </div>
         <div class="searchable-container">
-            <div class="items col-xs-12 col-sm-12 col-md-6 col-lg-6 clearfix">
+
+            <% @data.each do |data| %>   
+                <div class="items col-xs-12 col-sm-12 col-md-6 col-lg-6 clearfix">
                 <div class="info-block block-info clearfix">
                     <div class="square-box pull-left">
                         <button type="button" class="btn btn-info btn-circle">v</button>
                         <button type="button" class="btn btn-warning btn-circle">x</button>
                     </div>
-                    <h5>Company Name</h5>
-                    <h4>Name: Brenda Tree</h4>
-                    <p>Title: data</p>
-                    <span>Phone: 666-555-5555</span>
-                    <span>Email: sample@company.com</span>
+                    <table>
+                        <tr><td>Name : </td><td class="txtstyle"><%= data.name %></td></tr>
+                        <tr><td>Phone : </td><td class="txtstyle" ><%= data.mobile %>></td></tr>
+                        <tr><td>Email : </td><td class="txtstyle"><%= data.email %></td></tr>
+                        <tr><td>Subject : </td><td class="txtstyle"><%= data.subject %></td></tr>
+                        <tr><td>Message : </td><td class="txtmsg"><%= data.Message %></td></tr>
+                        <tr><td>Date</td><td class="txtstyle"><%= data.created_at %></td></tr>
+                    </table>
                 </div>
             </div>
-            <div class="items col-xs-12 col-sm-12 col-md-6 col-lg-6 clearfix">
-                <div class="info-block block-info clearfix">
-                    <div class="square-box pull-left">
-                        <button type="button" class="btn btn-info btn-circle">v</button>
-                        <button type="button" class="btn btn-warning btn-circle">x</button>
-                    </div>
-                    <h5>Company Name</h5>
-                    <h4>Name: Brenda Tree</h4>
-                    <p>Title: tintu</p>
-                    <span>Phone: 555-555-5555</span>
-                    <span>Email: sfdfple@company.com</span>
-                </div>
-            </div>
+        <% end %>                 
         </div>
     </div>
 </div>
