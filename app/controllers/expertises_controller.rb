@@ -56,7 +56,7 @@ class ExpertisesController < ApplicationController
   def destroy
     @expertise.destroy
     respond_to do |format|
-      format.html { redirect_to expertises_url, notice: 'Expertise was successfully destroyed.' }
+      format.html { redirect_to admin_contacts_245226_index_path, notice: 'Expertise was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
