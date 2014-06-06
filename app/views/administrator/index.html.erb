@@ -58,8 +58,7 @@ $(function() {
                 <div class="items col-md-6 clearfix" style="padding:1%;margin-top:1%;">
                 <div class="info-block block-info clearfix">
                     <div class="square-box pull-left">
-                        <button type="button" class="btn btn-info btn-circle">v</button>
-                        <button type="button" class="btn btn-warning btn-circle">x</button>
+                        <%= link_to 'X', data, method: :delete, data: { confirm:   'Are you sure?' }, type: "button" , class: "btn btn-info btn-cycle" %>
                     </div>
                     <table>
                         <tr><td>Name : </td><td class="txtstyle"><%= data.name %></td></tr>
